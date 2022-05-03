@@ -1,0 +1,48 @@
+nav#stickyHeaderNav {
+	display: none;
+}
+
+@media (max-width: 880px) {
+	nav#stickyHeaderNav {
+		display: block;
+	}
+	.navMain {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	.navMain a {
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		width: 100%;
+
+		display: inline-block;
+		text-align: center;
+		padding: 16px;
+		color: var(--primary-text-color-whitesmoke);
+		transition: var(--transition-hover-250ms-ease-in-out);
+	}
+	.navMain a p {
+		display: none;
+	}
+	.navMain a i {
+		font-size: 1.4rem;
+	}
+	.navMain a:hover,
+	.navMain a:focus {
+		cursor: pointer;
+		background: var(--primary-color-green);
+		color: var(--primary-text-color-yellow);
+	}
+	.scrollmenu {
+		background: var(--primary-color-darkgreen);
+		overflow-x: scroll;
+		display: flex;
+		justify-content: space-between;
+		z-index: 2;
+		border-top: var(--border-3px-solid-black);
+	}
+}

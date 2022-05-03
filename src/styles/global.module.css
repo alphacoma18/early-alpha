@@ -1,0 +1,100 @@
+:root {
+	--primary-color-darkgreen: darkgreen;
+	--primary-color-yellow: #f0f000;
+	--primary-color-green: green;
+	--primary-color-whitesmoke: whitesmoke;
+
+	--primary-text-color-whitesmoke: whitesmoke;
+	--primary-text-color-black: #333;
+	--primary-text-color-yellow: #f0f000;
+
+	--border-2px-solid-black: 2px solid black;
+	--border-3px-solid-black: 3px solid black;
+	--border-4px-solid-black: 4px solid black;
+
+	--border-2px-solid-darkgreen: 2px solid darkgreen;
+	--border-3px-solid-darkgreen: 3px solid darkgreen;
+	--border-4px-solid-darkgreen: 4px solid darkgreen;
+
+	--border-radius-full-round: 50%;
+
+	--transition-all-1s-ease-in-out: all 1s ease-in-out 0s;
+	--transition-all-500ms-linear: all 500ms linear 0s;
+	--transition-hover-250ms-ease-in-out: 250ms ease-in-out 0s;
+}
+::-webkit-scrollbar {
+	width: 1vh;
+	height: 1vh;
+}
+::-webkit-scrollbar-track {
+	background: var(--primary-color-darkgreen);
+	border-left: var(--border-2px-solid-black);
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: var(--primary-color-yellow);
+	border-left: var(--border-2px-solid-black);
+	border-top: var(--border-2px-solid-black);
+	border-bottom: var(--border-2px-solid-black);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--primary-color-yellow);
+}
+::selection {
+	background: var(--primary-color-yellow);
+	color: var(--primary-text-color-black);
+}
+*,
+html {
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-color: var(--primary-color-yellow) var(--primary-color-darkgreen);
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+}
+body {
+	line-height: 1.8em;
+	height: auto;
+	overflow-y: hidden;
+}
+/*mnhs logo*/
+:global .mnhsLogo {
+	width: clamp(0px, 100%, 120px);
+	cursor: pointer;
+}
+@keyframes mnhs-logo-glow {
+	0% {
+		box-shadow: 0px 0px 20px 5px var(--primary-color-yellow);
+	}
+	25% {
+		box-shadow: 0px 0px 20px 10px var(--primary-color-yellow);
+	}
+	50% {
+		box-shadow: 0px 0px 20px 15px var(--primary-color-yellow);
+	}
+	75% {
+		box-shadow: 0px 0px 20px 10px var(--primary-color-yellow);
+	}
+	100% {
+		box-shadow: 0px 0px 20px 5px var(--primary-color-yellow);
+	}
+}
+:global .horizontalRule {
+	margin: 10px;
+	background: var(--primary-color-darkgreen);
+	color: var(--primary-color-darkgreen);
+	height: 3px;
+	border: var(--border-2px-solid-black);
+	border-radius: 10px;
+}
+
+:global .horizontalRuleYellow {
+	margin: 10px;
+	background: var(--primary-color-yellow);
+	color: var(--primary-color-yellow);
+	height: 3px;
+	border: var(--border-2px-solid-black);
+	border-radius: 10px;
+}

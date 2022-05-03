@@ -1,0 +1,15 @@
+.outermostAboutUs {
+    width: clamp(25ch, 90%, 60ch);
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+
+}
+.brosLogo {
+    width: 125px;
+    border-radius: var(--border-radius-full-round);
+    border: var(--border-3px-solid-black);
+}
+.outermostAboutUs p, .outermostAboutUs q {
+    margin: 20px auto;
+}

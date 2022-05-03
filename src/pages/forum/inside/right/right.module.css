@@ -1,0 +1,20 @@
+.outermostRight {
+    padding: 10px;
+    min-height: 100%;
+    color: var(--primary-text-color-whitesmoke);
+}
+.responsesSay {
+    padding: 10px;
+    background: var(--primary-color-darkgreen);
+    text-align: center;
+    border-radius: 10px;
+}
+.responses {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 12px auto;
+    background: var(--primary-color-darkgreen);
+}
+.meta {
+    text-align: end;
+}

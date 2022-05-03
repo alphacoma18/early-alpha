@@ -1,0 +1,111 @@
+.outermostChatSection {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.chatPositioner {
+	width: 100%;
+	height: 100%;
+	background: var(--primary-color-whitesmoke);
+}
+.chatSection {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 8fr 60px;
+}
+/*First*/
+/*First*/
+/*First*/
+/*First*/
+.chatSidebar {
+	width: 100%;
+	height: 100%;
+	background: var(--primary-color-darkgreen);
+}
+.sidebarPositioner {
+	color: var(--primary-text-color-whitesmoke);
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.currentlyOnline {
+	height: 100%;
+	max-height: 300px;
+	overflow-y: scroll;
+}
+.onlineList {
+	text-decoration: none;
+}
+/*Third*/
+/*Third*/
+/*Third*/
+/*Third*/
+.messageForm {
+	background: var(--primary-color-darkgreen);
+	grid-column: 1 / span 2;
+	display: flex;
+	gap: 15px;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+}
+.textarea {
+	height: 100%;
+	width: 80%;
+	resize: none;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.sendButton {
+	cursor: pointer;
+	height: 100%;
+	width: 20%;
+	font-size: 1.2rem;
+}
+/*Second*/
+/*Second*/
+/*Second*/
+/*Second*/
+.mainChatShow {
+	padding: 20px;
+	overflow-y: scroll;
+}
+.chatMessage {
+	background: var(--primary-color-darkgreen);
+	color: var(--primary-text-color-whitesmoke);
+	padding: 10px;
+	border-radius: 17.5px;
+	margin-bottom: 15px;
+	word-break: break-word;
+	white-space: pre-line;
+}
+/*Actual Message*/
+/*Actual Message*/
+/*Actual Message*/
+.senderName {
+	font-weight: bold;
+}
+.timestamp {
+	text-align: end;
+}
+@media (max-width: 880px) {
+	.chatSection {
+		grid-template-columns: 1fr;
+		grid-template-rows: 84% 1fr;
+		height: 100%;
+	}
+	.chatPositioner {
+		height: 100%;
+	}
+	.messageForm {
+		grid-column: 1;
+	}
+	.sidebarPositioner {
+		display: none;
+	}
+	.chatSidebar {
+		display: none;
+	}
+}

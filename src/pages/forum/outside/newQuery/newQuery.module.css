@@ -1,0 +1,96 @@
+.outermostRight {
+    width: 95%;
+    height: calc(100% - 64px);
+    position: fixed;
+    background: var(--primary-color-whitesmoke);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondOutermost {
+    width: clamp(0%, 100%, 500px);
+    border-radius: 12px;
+    background: var(--primary-color-darkgreen);
+    padding: 10px;
+    margin: auto;
+}
+.forumForm {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.questionHeader, .questionBody {
+    width: 100%;
+    resize: vertical;
+    border-radius: 5px;
+}
+.questionHeader {
+    min-height: 80px;
+}
+.questionBody {
+    min-height: 200px;
+}
+.questionButtons {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.questionButtons button {
+    cursor: pointer;
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+}
+.counterDiv {
+    margin: 10px auto;
+    color: var(--primary-text-color-whitesmoke);
+}
+.mobileAskButton{
+    background: var(--primary-color-darkgreen);
+    border: none;
+    position: fixed;
+    color: var(--primary-text-color-whitesmoke);
+    bottom: 20px;
+    right: 50px;
+
+    z-index: 3;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: var(--transition-hover-250ms-ease-in-out);
+}
+.mobileAskButton i {
+    font-size: 50px;  
+}
+.mobileAskButton:hover, .mobileAskButton:focus {
+    color: var(--primary-text-color-yellow);
+}
+
+@media (max-width: 880px) {
+    .outermostRight {
+        width: 100%;
+    }
+    .secondOutermost {
+        background: none;
+    }
+    .forumForm {
+        margin: auto;
+        padding: 12px;
+    }
+    .mobileAskButton {
+        bottom: 62px;
+        right: 5px;
+        display: flex;
+    }
+    .counterDiv {
+        color: var(--primary-text-color-black);
+    }
+}

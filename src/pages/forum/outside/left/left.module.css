@@ -1,0 +1,41 @@
+.outermostLeftForum {
+    width: 100%;
+    position: relative;
+}
+.stickyLeft {
+    padding: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.filterButtons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.filterButtons button {
+    width: 45%;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+}
+.mobileFilter {
+    display: none;
+    width: 100%;
+}
+.mobileFilter select, .mobileFilter button {
+    margin-right: 5px;
+    width: 150px;
+    padding: 5px;
+    font-weight: bold;
+}
+@media (max-width: 880px) {
+    .mobileFilter {
+        display: block;
+    }
+    .filterButtons {
+        display: none;
+    }
+}

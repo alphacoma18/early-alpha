@@ -1,0 +1,15 @@
+.outermostInForm {
+    min-height: 100%;
+    background: var(--primary-color-whitesmoke);
+    width: 100%;
+}
+.secondOutermost {
+    margin: auto;
+    width: clamp(35ch, 90%, 75ch);
+}
+@media (max-width: 880px) {
+    .outermostInForm {
+        width: auto;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "tabWidth": 4,
+  "useTabs": true,
+  "insertSpaces": true,
+  "singleQuote": false,
+  "jsxSingleQuote": true,
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "arrowParens": "avoid",
+  "range": "infinity",
+  "insertFinalNewline": true,
+  "trimTrailingWhitespace": true,
+  "endOfLine": "lf",
+  "singleAttributePerLine": true
+}
