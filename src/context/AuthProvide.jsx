@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { createContext } from "react";
 import io from "socket.io-client";
-const socket = io.connect("https://mnhs-shs.herokuapp.com/");
+const socket = io.connect("https://mnhs-shs.herokuapp.com");
 const AuthContext = createContext();
 export default AuthContext;
 

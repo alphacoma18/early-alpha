@@ -1,12 +1,12 @@
 import Axios from "axios";
 
 export const axios = Axios.create({
-	baseURL: "https://mnhs-shs.herokuapp.com/",
+	baseURL: "https://mnhs-shs.herokuapp.com",
 	headers: {
 		"Content-Type": "application/json",
 		"Access-Control-Allow-Origin": [
 			"https://github.com/mnhs-shs/early-alpha",
-			"https://mnhs-shs.herokuapp.com/",
+			"https://mnhs-shs.herokuapp.com",
 		],
 		"Access-Control-Allow-Credentials": true,
 		"Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
