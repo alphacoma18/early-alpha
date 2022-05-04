@@ -118,6 +118,8 @@ const Login = () => {
 				navigate(state?.from?.pathname ?? "/", { replace: true });
 			})
 			.catch(error => {
+				console.log(error.response);
+				console.log(error.response?.message);
 				if (!error?.response) {
 					setError("NO SERVER RESPONSE");
 					setErrorShow(true);
