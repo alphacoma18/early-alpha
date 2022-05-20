@@ -37,19 +37,19 @@
 }
 @keyframes mnhs-logo-glow {
 	0% {
-		box-shadow: 0px 0px 20px 5px var(--primary-color-yellow);
+		box-shadow: 0px 0px 20px 5px var(--primary-text-color-whitesmoke);
 	}
 	25% {
-		box-shadow: 0px 0px 20px 10px var(--primary-color-yellow);
+		box-shadow: 0px 0px 20px 10px var(--primary-text-color-whitesmoke);
 	}
 	50% {
-		box-shadow: 0px 0px 20px 15px var(--primary-color-yellow);
+		box-shadow: 0px 0px 20px 15px var(--primary-text-color-whitesmoke);
 	}
 	75% {
-		box-shadow: 0px 0px 20px 10px var(--primary-color-yellow);
+		box-shadow: 0px 0px 20px 10px var(--primary-text-color-whitesmoke);
 	}
 	100% {
-		box-shadow: 0px 0px 20px 5px var(--primary-color-yellow);
+		box-shadow: 0px 0px 20px 5px var(--primary-text-color-whitesmoke);
 	}
 }
 @keyframes show-login-form {
