@@ -37,13 +37,13 @@
 }
 @keyframes mnhs-logo-glow {
 	0% {
-		box-shadow: 0px 0px 20px 5px var(--primary-text-color-whitesmoke);
+		box-shadow: 0px 0px 20px 5px var(--primary-text-color-black);
 	}
 	25% {
-		box-shadow: 0px 0px 20px 10px var(--primary-text-color-whitesmoke);
+		box-shadow: 0px 0px 20px 10px var(--primary-text-color-black);
 	}
 	50% {
-		box-shadow: 0px 0px 20px 15px var(--primary-text-color-whitesmoke);
+		box-shadow: 0px 0px 20px 15px var(--primary-text-color-black);
 	}
 	75% {
 		box-shadow: 0px 0px 20px 10px var(--primary-text-color-whitesmoke);
