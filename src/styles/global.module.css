@@ -53,13 +53,11 @@ html {
 	scrollbar-color: var(--primary-color-yellow) var(--primary-color-darkgreen);
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
 		sans-serif;
-
 }
 body {
 	line-height: 1.8em;
 	overflow-y: hidden;
 	min-height: 100%;
-	height: 100%;
 
 }
 /*mnhs logo*/

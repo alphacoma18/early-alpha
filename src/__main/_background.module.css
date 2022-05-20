@@ -1,13 +1,9 @@
 .bambooBackground {
-	min-height: -webkit-fill-available;
-	height: -webkit-fill-available;
-	height: 100%;
+	height: inherit;
 }
 .lightYellowBackground {
 	overflow-y: scroll;
 	background: var(--primary-color-whitesmoke);
-	min-height: -webkit-fill-available;
-	height: -webkit-fill-available;
 	height: calc(100vh - 64px);
 	width: 95vw;
 	margin: auto;
@@ -17,8 +13,6 @@
 @media (max-width: 880px) {
 	.lightYellowBackground {
 		/* overflow-y: scroll; */
-		min-height: -webkit-fill-available;
-		height: -webkit-fill-available;
 		height: calc(100vh - 120px);
 		width: 100%;
 		border-left: none;
